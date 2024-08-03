@@ -25,7 +25,5 @@ public class UserExceptionHandler {
             this.statusCode = statusCode;
             this.message = message;
         }
-
-        // Getters and setters for statusCode and message
     }
 }
