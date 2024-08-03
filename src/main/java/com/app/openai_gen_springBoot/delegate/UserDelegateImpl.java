@@ -19,37 +19,31 @@ public class UserDelegateImpl implements UsersApiDelegate {
 
     @Override
     public Optional<NativeWebRequest> getRequest() {
-        System.out.println("UserDelegateImpl.getRequest() called");
         return UsersApiDelegate.super.getRequest();
     }
 
     @Override
     public ResponseEntity<Void> deleteUserById(String userId) {
-        System.out.println("UserDelegateImpl.deleteUserById() called");
         return new ResponseEntity<>(userService.deleteUser(userId), null, HttpStatus.NO_CONTENT);
     }
 
     @Override
     public ResponseEntity<User> getUserById(String userId) {
-        System.out.println("UserDelegateImpl.getUserById() called");
         return new ResponseEntity<>(userService.getUserById(userId), null, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<List<User>> getUsers() {
-        System.out.println("UserDelegateImpl.getUsers() called");
         return new ResponseEntity<>(userService.getAllUsers(), null, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<User> updateUserById(String userId, User user) {
-        System.out.println("UserDelegateImpl.updateUserById() called");
         return new ResponseEntity<>(userService.updateUser(userId, user), null, HttpStatus.OK);
     }
 
     @Override
     public ResponseEntity<User> usersPost(User user) {
-        System.out.println("UserDelegateImpl.usersPost() called");
         return new ResponseEntity<>(userService.addUser(user), null, HttpStatus.CREATED);
     }
 }

@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class OpenaiGenSpringBootApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(OpenaiGenSpringBootApplication.class, args);
-		System.out.println("OpenaiGenSpringBootApplication Successfully started...!!!");
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(OpenaiGenSpringBootApplication.class, args);
+        System.out.println("OpenaiGenSpringBootApplication Successfully started...!!!");
+    }
 
 }
