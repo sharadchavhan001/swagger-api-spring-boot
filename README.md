@@ -16,7 +16,7 @@ This project is a simple demonstration of a Spring Boot application that perform
 1. **Clone the Repository**
 
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/sharadchavhan001/swagger-api-spring-boot.git
     cd springboot-swagger
     ```
 
